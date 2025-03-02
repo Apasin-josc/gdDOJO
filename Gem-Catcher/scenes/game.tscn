@@ -14,5 +14,9 @@ texture = ExtResource("1_4pqnf")
 [node name="Paddle" parent="." instance=ExtResource("2_qyg3k")]
 position = Vector2(559, 584)
 
-[node name="Area2D" parent="." instance=ExtResource("3_h46ki")]
-position = Vector2(649, 115)
+[node name="Gem" parent="." instance=ExtResource("3_h46ki")]
+position = Vector2(754, 91)
+
+[node name="Gem2" parent="." instance=ExtResource("3_h46ki")]
+position = Vector2(311, 56)
+speed = 150.0
