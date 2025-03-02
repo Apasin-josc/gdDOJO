@@ -1,5 +1,6 @@
 extends Area2D
 
+signal on_gem_off_screen
 
 @export var speed: float = 100.0
 
@@ -15,5 +16,6 @@ func _process(delta):
 	
 	#as soon as the gem gets to the bottom of the viewport DISSAPPEAR
 	if position.y > get_viewport_rect().size.y:
+		on_gem_off_screen.emit()
 		set_process(false)
 		queue_free()
