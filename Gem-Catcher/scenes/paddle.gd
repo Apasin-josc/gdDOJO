@@ -19,5 +19,4 @@ func _process(delta):
 		position.x += speed * delta
 
 
-func _on_gem_area_entered(area):
-	print(area)
+
